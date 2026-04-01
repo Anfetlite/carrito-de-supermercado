@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css-prueba.css" />
+    <title>Pruebas botones</title>
+  </head>
+  <body>
+    <div class="inputBox">
+      <div class="divTotal" id="totalGeneral">0</div>
+      <div class="divVariables">
+        <div class="divInput">
+          <input
+            type="text"
+            name=""
+            id="nombreItem"
+            placeholder="Nombre del item"
+          />
+        </div>
+        <div class="divVariablesNumericas">
+          <div class="divPrecio">
+            <input
+              type="text"
+              name=""
+              id="precioItem"
+              inputmode="numeric"
+              pattern="[0-9]*"
+              title="Solo números"
+              placeholder="Precio"
+            />
+          </div>
+          <div class="divCantidad">
+            <input
+              type="number"
+              name=""
+              id="cantidadItems"
+              min="0"
+              placeholder="Cantidad"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contenedorBotoninsertar">
+      <button
+        type="button"
+        class="button buttonInsertarPrueba"
+        id="buttonInsertar"
+      >
+        Insertar
+      </button>
+    </div>
+
+    <div class="tarjeta" id="tarjeta-base">
+      <div class="contenedorContenido" id="contenido"></div>
+      <div class="contenedorBotones">
+        <button type="button" class="button" id="buttonInsertar">
+          Insertar</button
+        ><button type="button" class="button">Boton 2</button
+        ><button type="button" class="button">Boton 3</button
+        ><button type="button" class="button">Boton 4</button>
+      </div>
+    </div>
+    <script src="app-prueba.js"></script>
+  </body>
+</html>
